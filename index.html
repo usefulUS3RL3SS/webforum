@@ -16,32 +16,38 @@
             <form>
                 <h1>СибГУТИ</h1>
                 <div class="icons">
-                    <a href="#" class="icon"><img src="src/sibsutis.png" width="18" height=""></i></a>
-                    <a href="#" class="icon"><img src="src/moodle.png" width="25" height=""></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-vk"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://sibsutis.ru/" class="icon"><img src="src/sibsutis.png" width="18" height=""></i></a>
+                    <a href="https://eios.sibsutis.ru/login/index.php" class="icon"><img src="src/moodle.png" width="25" height=""></a>
+                    <a href="https://vk.com/sibguti_info" class="icon"><i class="fa-brands fa-vk"></i></a>
+                    <a href="https://discord.com/" class="icon"><i class="fa-brands fa-discord"></i></a>
                 </div>
                 <span>Введите данные для регистрации</span>
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Группа">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Пароль">
-                <button>Зарегистрироваться</button>
+                <form action="auth.php" method="post">
+                <input type="text" placeholder="Имя" name="new_username" required>
+                <input type="text" placeholder="Группа" name="new_group" required>
+                <input type="email" placeholder="Email" name="new_email" required>
+                <input type="password" placeholder="Пароль" name="new_password" required>
+                <input type="submit" name="Sign_up" value="Sign_up">
+                <!-- <button>Зарегистрироваться</button> -->
+                </form>
             </form>
         </div>
         <div class="form-container sign-in">
             <form>
                 <h1>СибГУТИ</h1>
                 <div class="icons">
-                    <a href="#" class="icon"><img src="src/sibsutis.png" width="18" height=""></i></a>
-                    <a href="#" class="icon"><img src="src/moodle.png" width="25" height=""></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-vk"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://sibsutis.ru/" class="icon"><img src="src/sibsutis.png" width="18" height=""></i></a>
+                    <a href="https://eios.sibsutis.ru/login/index.php" class="icon"><img src="src/moodle.png" width="25" height=""></a>
+                    <a href="https://vk.com/sibguti_info" class="icon"><i class="fa-brands fa-vk"></i></a>
+                    <a href="https://discord.com/" class="icon"><i class="fa-brands fa-discord"></i></a>
                 </div>
                 <span>Введите email и пароль</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button>Войти</button>
+                <form action="auth.php" method="post">
+                <input type="email" name="existing_username" placeholder="Email" required>
+                <input type="password" name="existing_password" placeholder="Password" required>
+                <input type="submit" name="Sign_in" value="Sign_in">
+                <!-- <button>Войти</button> -->
+            </form>
             </form>
         </div>
         <div class="toggle-container">
